@@ -1,0 +1,443 @@
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+--primary-color: #c8c8c8;
+--secondary-color: #231f1f;
+--text-color:#000000;
+--icon-color:#57595b;
+--link-color:#757675;
+--hr-color:#808282;
+--black-color:#000000;
+--white-color: #ffffff;
+--font-family-poppins: "Poppins", sans-serif;
+--font-family-open: "Open Sans", sans-serif;
+--font-family-trebuchet:Trebuchet;
+}
+
+
+
+
+
+/* common code starts here */
+font-face{
+src: url(/assets/font/trebuc.ttf);
+font-family: Trebuchet;
+}
+ul {
+align-items: center;
+list-style: none;
+}
+ul li {
+margin: 5px 0px;
+}
+ul li a {
+text-decoration: none;
+color: var(--link-color);
+font-size: 17px;
+font-family: var(--font-family-trebuchet);
+font-weight: 400;
+}
+ol, ul {
+padding-left: 0px;
+}
+.parents{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+/* common code ends here */
+
+
+
+
+
+
+
+/* hero section starts here */
+.hero{
+padding: 50px 0px 0px 0px;
+}
+.poster{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.poster img{
+width: 220px;
+height: 220px;
+}
+.name h1{
+font-size: 40px;
+font-family: var(--font-family-trebuchet);
+font-weight: 700;
+color: var(--secondary-color);
+}
+.nick-name h2{
+font-size: 25px;
+font-family: var(--font-family-trebuchet);
+font-weight: 500;
+color: var(--secondary-color);
+}
+.icon{
+display: flex;
+justify-content: space-between;
+}
+.hero-hr{
+margin-top: 20px;
+height: 25px;
+background-color: var(--icon-color);
+}
+
+.contact {
+padding-top: 0px;
+text-align: end;
+}
+hr {
+color: var(--hr-color);
+height: 0.1px;
+opacity: 100%;
+margin-left: 0px;
+width: 99%;
+}
+.icon{
+position: relative;
+}
+.icon::after{
+content: "";
+position: absolute;
+left: 50%;
+bottom: 0px;
+height: 0.1px;
+width: 49%;
+background-color: var(--hr-color);
+}
+.contact li:first-child{
+position: relative;
+}
+.contact li:first-child::before {
+content: "";
+position: absolute;
+right: -1%;
+rotate: 90deg;
+height: 1px;
+width: 10%;
+top: -11px;
+background-color: var(--hr-color);
+}
+.contact li:last-child{
+position: relative;
+}
+.contact li:last-child::before {
+content: "";
+position: absolute;
+top: 35px;
+right: 0px;
+rotate: 90deg;
+height: 1px;
+width: 8%;
+background-color: var(--hr-color);
+}
+.fa-brand {
+padding: 5px;
+font-size: 14px;
+color: var(--white-color);
+border-radius: 50%;
+background-color: var(--icon-color);
+}
+
+.fa-brand:hover {
+background-color: var(--white-color);
+color: var(--black-color);
+}
+
+/* hero section ends here */
+
+
+
+
+
+
+/* personal information section stats here */
+.personal-right{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+  }
+  .right-aside{
+  padding-left: 75px;
+  color: var(--text-color);
+  font-size: 17px;
+  }
+  .left-aside{
+  padding-left: 0px;
+  text-align: end !important;
+  color: var(--text-color);
+  font-size: 17px;
+  }
+  .left-aside p{
+    padding-left: 0px;
+    text-align: end !important;
+    color: var(--text-color);
+    font-size: 17px;
+    padding-right: 68px !important;
+    }
+
+.heading{
+position: relative;
+}
+.heading::after{
+content: "";
+position: absolute;
+left: 22%;
+bottom: 0px;
+height: 0.1px;
+width: 57%;
+background-color: var(--hr-color);
+}
+.heading h3 {
+text-align: center;
+padding: 50px 0px 0px 120px;
+text-transform: uppercase;
+font-size:25px;
+font-family: var(--font-family-trebuchet);
+font-weight: 600px;
+color: var(--black-color);
+
+}
+.title{
+font-family: var(--font-family-trebuchet);
+}
+.profile{
+position: relative;
+}
+.profile::after{
+content: "";
+position: absolute;
+left: 0%;
+bottom: 0px;
+height: 0.1px;
+width: 100%;
+background-color: var(--hr-color);
+}
+.profile h3 {
+padding: 50px 0px 0px 0px;
+text-transform: uppercase;
+font-size:25px;
+font-family: var(--font-family-trebuchet);
+font-weight: 600px;
+color: var(--black-color);
+}
+.title p {
+padding: 15px 0px 0px 0px;
+font-size: 17px;
+font-family: var(--font-family-trebuchet);
+font-weight: 400px;
+color: var(--text-color);
+line-height: 1.4rem;
+text-align: justify;
+
+}
+/* personal information section ends here */
+
+
+
+/* educatuin section starts here */
+.features{
+position: relative;
+}
+.features::after{
+content: "";
+position: absolute;
+left: 22%;
+bottom: 0px;
+height: 0.1px;
+width: 57%;
+background-color: var(--hr-color);
+}
+.features h3 {
+text-align: center;
+padding: 10px 0px 0px 108px;
+text-transform: uppercase;
+font-size:25px;
+font-family: var(--font-family-trebuchet);
+font-weight: 600px;
+color: var(--black-color);
+}
+.skills{
+position: relative;
+}
+.skills::after{
+content: "";
+position: absolute;
+left: 22%;
+bottom: 0px;
+height: 0.1px;
+width: 57%;
+background-color: var(--hr-color);
+}
+.skills h3 {
+text-align: center;
+padding: 10px 0px 0px 160px;
+text-transform: uppercase;
+font-size:25px;
+font-family: var(--font-family-trebuchet);
+font-weight: 600px;
+color: var(--black-color);
+}
+.parents{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+
+}
+.child-01{
+padding-left: 26px;
+color: var(--text-color);
+font-size: 17px;
+}
+.child-02{
+padding-left: 0px;
+text-align: end;
+color: var(--text-color);
+font-size: 17px;
+}
+.projects{
+position: relative;
+}
+.projects::after{
+content: "";
+position: absolute;
+left: 22%;
+bottom: 0px;
+height: 0.1px;
+width: 57%;
+background-color: var(--hr-color);
+}
+.projects h3 {
+text-align: center;
+padding: 30px 0px 0px 130px;
+text-transform: uppercase;
+font-size:25px;
+font-family: var(--font-family-trebuchet);
+font-weight: 600px;
+color: var(--black-color);
+}
+.main-projects ul li{
+  padding-left: 20px !important;
+}
+.project-inner{
+text-align: end;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.education{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.landmark h4{
+font-size: 18px;
+font-family: var(--font-family-trebuchet);
+font-weight: 400px;
+padding: 15px 0px 0px 0px;
+text-align: end;
+color: var(--black-color);
+}
+.landmark p{
+font-size: 17px;
+font-family: var(--font-family-trebuchet);
+font-weight: 400px;
+padding: 0px 0px 0px 0px;
+text-align: end;
+color: var(--text-color);
+}
+.landmark{
+padding-left: 75px;
+}
+
+.experience{
+position: relative;
+}
+.experience::after{
+content: "";
+position: absolute;
+left: 0%;
+bottom: 0px;
+height: 0.1px;
+width: 100%;
+background-color: var(--hr-color);
+}
+.experience h3 {
+padding: 10px 0px 0px 0px;
+text-transform: uppercase;
+font-size:25px;
+font-family: var(--font-family-trebuchet);
+font-weight: 600px;
+color: var(--black-color);
+}
+
+  .Certifications h3 {
+  padding: 10px 0px 0px 0px;
+  text-transform: uppercase;
+  font-size:25px;
+  font-family: var(--font-family-trebuchet);
+  font-weight: 506px;
+  color: var(--black-color);
+  }
+
+.learn h4{
+font-size: 18px;
+font-family: var(--font-family-trebuchet);
+font-weight: 400px;
+padding: 15px 0px 0px 0px;
+color: var(--black-color);
+}
+.learn p{
+font-size: 17px;
+font-family: var(--font-family-trebuchet);
+font-weight: 400px;
+padding: 0px 0px 0px 0px;
+color: var(--text-color);
+}
+.references{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.reference-01 h4{
+font-size: 20px;
+font-family: var(--font-family-trebuchet);
+font-weight: 500px;
+padding: 20px 0px 0px 0px;
+color: var(--black-color);
+}
+.reference-01 p{
+font-size: 17px;
+font-family: var(--font-family-trebuchet);
+font-weight: 400px;
+padding: 0px 0px 0px 0px;
+color: var(--text-color);
+}
+.reference-02 h4{
+font-size: 20px;
+font-family: var(--font-family-trebuchet);
+font-weight: 500px;
+padding: 20px 0px 0px 0px;
+color: var(--black-color);
+}
+.reference-02 p{
+font-size: 17px;
+font-family: var(--font-family-trebuchet);
+font-weight: 400px;
+padding: 0px 0px 0px 0px;
+color: var(--text-color);
+}
+/* educatuin section ends here */
